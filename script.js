@@ -1,4 +1,6 @@
-var data = {"C2.07": 10};
+var data = {"C2.07": 10, "C2.03": 20,};
+var occupied = "#dc3545";
+var free = "#198754";
 
 $(function () {
 	$("#map").vectorMap({
@@ -7,22 +9,12 @@ $(function () {
 			regions: [
 				{
 					values: {
-						"C2.12": "SPORTS & OUTDOOR",
+						"C2.12": "FREE",
+						"C2.03": "OCCUPIED",
 					},
 					scale: {
-						FASHION: "#2761ad",
-						"LINGERIE & UNDERWEAR": "#d58aa3",
-						"BEAUTY & SPA": "#ee549f",
-						"URBAN FAVORITES": "#15bbba",
-						"SPORTS & OUTDOOR": "#8864ab",
-						"KIDS STUFF": "#ef4e36",
-						ENTERTAINMENT: "#e47325",
-						"HOME DECOR": "#a2614f",
-						LIFESTYLE: "#8a8934",
-						DINING: "#73bb43",
-						"REST ROOMS": "#6c260f",
-						SERVICES: "#504d7c",
-						OTHER: "#c7b789",
+						"FREE": free,
+						"OCCUPIED": occupied,
 					},
 				},
 			],
