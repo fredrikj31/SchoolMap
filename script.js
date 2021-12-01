@@ -1,3 +1,5 @@
+var nums = [1,2,3,4,5,6,7,8,9,10];
+
 $(function () {
 	$("#map").vectorMap({
 		map: "secondFloor",
@@ -28,7 +30,8 @@ $(function () {
 		labels: {
 			regions: {
 				render: function (code) {
-					return regions[code] && jvm.Map.maps[map].paths[code].name;
+					console.log(code);
+					return code;
 				},
 			},
 		},
