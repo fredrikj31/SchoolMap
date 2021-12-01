@@ -1,4 +1,4 @@
-var nums = [1,2,3,4,5,6,7,8,9,10];
+var data = {"C2.07": 10};
 
 $(function () {
 	$("#map").vectorMap({
@@ -31,7 +31,7 @@ $(function () {
 			regions: {
 				render: function (code) {
 					console.log(code);
-					return code;
+					return data[code];
 				},
 			},
 		},
